@@ -10,7 +10,7 @@ namespace cesiAnimal.animal
     {
         public Sheep()
         {
-            this.name = "Sheep";
+            this.Name = "Sheep";
         }
 
         public override void cry()
