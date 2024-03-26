@@ -13,6 +13,11 @@ namespace cesiAnimal.animal
             this.Name = "Wolf";
         }
 
+        public Wolf(string name)
+        {
+            this.name = name;
+        }
+
         public override void cry()
         {
             Console.WriteLine("Arou Arou !");

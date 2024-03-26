@@ -1,10 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
 namespace cesiAnimal.animal
 {
     public abstract class Animal
     {
+        public String name { get; protected set; }
+
+        public Animal()
+        {
+            this.name = "non-existent";
+
         public String Name { get; protected set; }
 
         public Animal()
