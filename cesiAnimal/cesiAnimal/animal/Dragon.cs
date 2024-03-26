@@ -12,7 +12,7 @@ namespace cesiAnimal.animal
     {
         public Dragon()
         {
-            this.name = "Dragon";
+            this.Name = "Dragon";
         }
 
         public override void cry()
@@ -22,7 +22,7 @@ namespace cesiAnimal.animal
 
         public void eat(Animal animal)
         {
-            Console.WriteLine(this.name + " eat " + animal.name);
+            Console.WriteLine(this.Name + " eat " + animal.Name);
         }
 
         public void eat(Vehicle vehicle)

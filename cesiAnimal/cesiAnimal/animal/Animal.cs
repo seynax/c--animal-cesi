@@ -1,6 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
 namespace cesiAnimal.animal
 {
     public abstract class Animal
@@ -10,35 +7,41 @@ namespace cesiAnimal.animal
         public Animal()
         {
             this.name = "non-existent";
+
+        public String Name { get; protected set; }
+
+        public Animal()
+        {
+            Name = "non-existent";
         }
 
         public Animal(String name)
         {
-            this.name = name;
+            this.Name = name;
         }
 
         public void move()
         {
-            if (name == null)
+            if (Name == null)
             {
                 Console.WriteLine("invisible animal move");
 
                 return;
             }
 
-            Console.WriteLine(name + " move");
+            Console.WriteLine(Name + " move");
         }
 
         public void sleep()
         {
-            if (name == null)
+            if (Name == null)
             {
                 Console.WriteLine("invisible animal sleep");
 
                 return;
             }
 
-            Console.WriteLine(name + " sleep");
+            Console.WriteLine(Name + " sleep");
         }
 
         public abstract void cry();
