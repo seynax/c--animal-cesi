@@ -5,11 +5,11 @@ namespace cesiAnimal.animal
 {
     public abstract class Animal
     {
-        public String name;
+        public String name { get; protected set; }
 
         public Animal()
         {
-
+            this.name = "non-existent";
         }
 
         public Animal(String name)

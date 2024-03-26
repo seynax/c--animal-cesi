@@ -1,7 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-using cesiAnimal.animal;
+﻿using cesiAnimal.animal;
+using cesiAnimal.vehicle;
 
 class Program
 {
@@ -22,7 +20,19 @@ class Program
         dragon.eat(wolf);
         griffin.cry();
         griffin.sleep();
+        dragon.mount(griffin);
+
+
+
         dragon.eat(griffin);
+
+        Ship ship = new Ship();
+        ship.mount(dragon);
+        ship.move();
+        ship.unmount(dragon);
+        dragon.eat(ship);
+        dragon.eat(dragon);
+
 
         Console.ReadLine();
     }
