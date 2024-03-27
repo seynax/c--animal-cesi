@@ -4,31 +4,31 @@ namespace cesiAnimal.vehicle
 {
     public abstract class Vehicle : Drivable
     {
-        public String name { get; protected set; }
+        public String Name { get; protected set; }
 
         public Vehicle()
         {
-            this.name = "non-existent";
+            this.Name = "non-existent";
         }
 
-        public Vehicle(String name)
+        public Vehicle(String Name)
         {
-            this.name = name;
+            this.Name = Name;
         }
 
         public virtual void mount(Animal animal)
         {
-            Console.WriteLine(animal.name + " mount on " + this.name);
+            Console.WriteLine(animal.Name + " mount on " + this.Name);
         }
 
         public virtual void move()
         {
-            Console.WriteLine(this.name + " move");
+            Console.WriteLine(this.Name + " move");
         }
 
         public virtual void unmount(Animal animal)
         {
-            Console.WriteLine(animal.name + " unmount " + this.name);
+            Console.WriteLine(animal.Name + " unmount " + this.Name);
         }
     }
 }

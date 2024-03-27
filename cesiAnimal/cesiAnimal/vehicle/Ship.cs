@@ -6,22 +6,22 @@ namespace cesiAnimal.vehicle
     {
         public Ship()
         {
-            this.name = "ship";
+            this.Name = "ship";
         }
 
         public override void mount(Animal animal)
         {
-            Console.WriteLine(animal.name + " mount on " + this.name);
+            Console.WriteLine(animal.Name + " mount on " + this.Name);
         }
 
         public override void move()
         {
-            Console.WriteLine(this.name + " move");
+            Console.WriteLine(this.Name + " move");
         }
 
         public override void unmount(Animal animal)
         {
-            Console.WriteLine(animal.name + " unmount " + this.name);
+            Console.WriteLine(animal.Name + " unmount " + this.Name);
         }
     }
 }

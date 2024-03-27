@@ -12,7 +12,9 @@ namespace cesiAnimal.animal
     {
         public Dragon()
         {
+            this.id = Animal.animalCount++;
             this.Name = "Dragon";
+            this.Rarity = 10;
         }
 
         public override void cry()
@@ -27,22 +29,22 @@ namespace cesiAnimal.animal
 
         public void eat(Vehicle vehicle)
         {
-            Console.WriteLine(this.name + " eat " + vehicle.name + " vehicle");
+            Console.WriteLine(this.Name + " eat " + vehicle.Name + " vehicle");
         }
 
         public void mount(Animal animal)
         {
-            Console.WriteLine(animal.name + " mount on dragon");
+            Console.WriteLine(animal.Name + " mount on dragon");
         }
 
-        public void move()
+        public new void move()
         {
             Console.WriteLine("move with animal");
         }
 
         public void unmount(Animal animal)
         {
-            Console.WriteLine(animal.name + " unmount on dragon");
+            Console.WriteLine(animal.Name + " unmount on dragon");
 
         }
     }

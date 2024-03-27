@@ -10,7 +10,9 @@ namespace cesiAnimal.animal
     {
         public Sheep()
         {
+            this.id = Animal.animalCount++;
             this.Name = "Sheep";
+            this.Rarity = 75;
         }
 
         public override void cry()
