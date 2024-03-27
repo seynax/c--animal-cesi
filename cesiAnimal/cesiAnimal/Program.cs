@@ -39,7 +39,7 @@ class Program
         };
 
         IEnumerable<Wolf> selectedWolfs = from selectedWolf in wolfs
-                                  where selectedWolf.name != "snow"
+                                  where selectedWolf.Name != "snow"
                                   select selectedWolf;
 
         Console.WriteLine();
@@ -47,7 +47,25 @@ class Program
 
         foreach (var selectedWolf in selectedWolfs)
         {
-            Console.WriteLine(selectedWolf.name);
+            Console.WriteLine(selectedWolf.Name);
+        }
+
+        IList<Animal> animals = new List<Animal>()
+        {
+            new Dragon(),
+            new Griffin(),
+            new Wolf(),
+            new Sheep()
+        };
+
+        IEnumerable<Animal> selectedAnimals = animals.Where(animal => animal.Rarity < 51);
+
+        Console.WriteLine();
+        Console.WriteLine();
+
+        foreach (var selectedAnimal in selectedAnimals)
+        {
+            Console.WriteLine(selectedAnimal.id + " : " + selectedAnimal.Name + ", " + selectedAnimal.Rarity + " % appear probability");
         }
 
         Console.ReadLine();

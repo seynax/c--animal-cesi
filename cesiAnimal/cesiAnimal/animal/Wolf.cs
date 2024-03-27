@@ -10,12 +10,16 @@ namespace cesiAnimal.animal
     {
         public Wolf()
         {
+            this.id = Animal.animalCount++;
             this.Name = "Wolf";
+            this.Rarity = 55;
         }
 
-        public Wolf(string name)
+        public Wolf(string Name)
         {
-            this.name = name;
+            this.id = Animal.animalCount++;
+            this.Name = Name;
+            this.Rarity = 55;
         }
 
         public override void cry()

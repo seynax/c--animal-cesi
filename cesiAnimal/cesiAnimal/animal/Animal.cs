@@ -2,23 +2,11 @@ namespace cesiAnimal.animal
 {
     public abstract class Animal
     {
-        public String name { get; protected set; }
+        public static int animalCount;
 
-        public Animal()
-        {
-            this.name = "non-existent";
-
+        public int id;
         public String Name { get; protected set; }
-
-        public Animal()
-        {
-            Name = "non-existent";
-        }
-
-        public Animal(String name)
-        {
-            this.Name = name;
-        }
+        public int Rarity { get; protected set; }
 
         public void move()
         {
